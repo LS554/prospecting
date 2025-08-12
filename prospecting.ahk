@@ -1,7 +1,7 @@
 ﻿; This is free and unencumbered software released into the public domain.
 ; See LICENSE in project root for details.
 
--------------------------------------------------
+; -------------------------------------------------
 
 ; Press F1 to run this macro
 ; Press F2 to pause this macro
@@ -13,7 +13,7 @@ global digTimes := 4
 global panDuration := 25000
 ; ==========================
 
--------------------------------------------------
+; -------------------------------------------------
 
 global looping := false
 F1:: {
@@ -28,7 +28,7 @@ F1:: {
             }
             
             Send("{w down}")
-            Sleep(390)
+            Sleep(400)
             Send("{w up}")
 
             Send("{LButton}")
@@ -42,7 +42,7 @@ F1:: {
             Sleep(500)
 
             Send("{s down}")
-            Sleep(390)
+            Sleep(400)
             Send("{s up}")
             Sleep(100)
     }
