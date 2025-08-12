@@ -8,9 +8,13 @@
 ; Press F3 to exit this macro
 
 ; ======== Settings ========
-global digDuration := 950
+global digDuration := 450
 global digTimes := 4
+
 global panDuration := 25000
+
+
+global walkDuration := 250 ; *modification not recommended!
 ; ==========================
 
 ; -------------------------------------------------
@@ -28,7 +32,7 @@ F1:: {
             }
             
             Send("{w down}")
-            Sleep(400)
+            Sleep(walkDuration)
             Send("{w up}")
 
             Send("{LButton}")
@@ -42,7 +46,7 @@ F1:: {
             Sleep(500)
 
             Send("{s down}")
-            Sleep(400)
+            Sleep(walkDuration)
             Send("{s up}")
             Sleep(100)
     }
